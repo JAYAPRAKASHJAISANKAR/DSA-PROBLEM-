@@ -312,6 +312,17 @@
 //   console.log(row);
 // }
 
+// for (let i = 0; i < n; i++) {
+//   let run = " ";
+//   for (let j = 1; j < n - i; j++) {
+//     run += "";
+//   }
+//   for (let k = 1; (k = i); k++) {
+//     run += i;
+//   }
+//   console.log(run);
+// }
+
 // let n = 4;
 
 // function num(n) {
@@ -452,7 +463,7 @@
 //   }
 // }
 
-// let n = 4;
+// let n = 10;
 
 // for (let i = 1; i <= n; i++) {
 //   let run = "";
@@ -468,7 +479,7 @@
 //   }
 //   console.log(run);
 // }
-//for (let i = n - 1; i >= 1; i--) {
+// for (let i = n - 1; i >= 1; i--) {
 //   let run = "";
 //   for (let j = 1; j <= n - i; j++) {
 //     run += " ";
@@ -653,21 +664,25 @@
 // }
 // console.log(y);
 
-// let a = [4, 5, 10, 11, 1, 100, 67];
-// let k = 5;
-// let x = 0;
+// let a = [4, 5, 10, 11, 1];
+// let k = 3;
+// let maxSum = 0;
 
-// for (let i = 0; i <= a.length - k; i++) {
-//   let y = 0;
+// for (let i = 0; i < a.length - k + 1; i++) {
+//   //012
+
+//   let sum = 0;
 //   for (let j = i; j < i + k; j++) {
-//     y += a[j];
+//     //012
+//     //123
+//     sum += a[j];
 //   }
-//   if (y > x) {
-//     x = y;
+//   if (sum > maxSum) {
+//     maxSum = sum;
 //   }
 // }
 
-// console.log(x);
+// console.log(maxSum);
 
 // Given the length and breadth , let l = 10; let b = 5; your code should print "Area of the rectangle is 50".
 
@@ -687,3 +702,484 @@
 // } else {
 //   console.log("It should either a is equal to b or a is NOT equal to b");
 // }
+
+// 6               arr[] size n = 6
+// -4 3 -9 0 4 1   arr = [-4, 3, -9, 0, 4, 1]
+
+// let arr = [-4, 3, -9, 0, 4, 1];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 0) {
+//     console.log(arr[i]);
+//   } else if (arr[i] < 0) {
+//     console.log(arr[i]);
+//   } else {
+//     console.log(arr[i]);
+//   }
+// }
+
+// let arr = [-4, 3, -9, 0, 4, 1];
+// let negativeCount = 0;
+// let positiveCount = 0;
+// let zeroCount = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] < 0) {
+//     negativeCount++;
+//   } else if (arr[i] > 0) {
+//     positiveCount++;
+//   } else {
+//     zeroCount++;
+//   }
+// }
+
+// console.log("Negative numbers: " + negativeCount);
+// console.log("Positive numbers: " + positiveCount);
+// console.log("Zeros: " + zeroCount);
+
+// let arr = [-4, 3, -9, 0, 4, 1];
+
+// let positivecount = 0;
+// let negativecount = 0;
+// let zerocount = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 0) {
+//     positivecount++;
+//   } else if (arr[i] < 0) {
+//     negativecount++;
+//   } else {
+//     zerocount++;
+//   }
+// }
+// let tot = arr.length;
+// console.log(positivecount / tot);
+// console.log(negativecount / tot);
+// console.log(zerocount / tot);
+
+//// let firstdiv = positivecount / tot;
+// //let seconddiv = negativecount / tot;
+//// let lastdiv = zerocount / tot;
+
+//// console.log(firstdiv);
+//// console.log(seconddiv);
+//// console.log(lastdiv);
+
+// let n = 4;
+
+// let row = " ";
+// for (let i = 1; i <= n; i++) {
+//   row += i + " ";
+// }
+// console.log(row);
+
+// let out = " ";
+// for (let i = n - 2; i <= n - 1; i++) {
+//   out += i + "     ";
+// }
+// console.log(out);
+
+// let rev = " ";
+// for (let i = n - 1; i >= n - 2; i--) {
+//   rev += i + "     ";
+// }
+// console.log(rev);
+// let run = " ";
+// for (let i = n; i >= 1; i--) {
+//   run += i + " ";
+// }
+// console.log(run);
+
+// Sample Input 0
+
+// 4
+// let candle = [3, 2, 1, 3];
+// // Sample Output 0
+
+// // 2
+// // Explanation 0
+
+// // Candle heights are . The tallest candles are  units, and there are  of them.
+
+// let a = candle[0];
+
+// for (let i = 0; i < candle.length; i++) {
+//   if (a < candle[i]) {
+//     a = candle[i];
+//   }
+// }
+// let one = a;
+// // console.log(one);
+
+// let count = 0;
+// for (let i = 0; i < candle.length; i++) {
+//   if (one == candle[i]) {
+//     count++;
+//   }
+// }
+// console.log(count);
+
+// let n = 5;
+// let count = 1;
+// let str = "";
+// for (let i = 1; i <= n; i++) {
+//   for (let k = 1; k <= n - i; k++) {
+//     str += " ";
+//   }
+//   for (let j = 1; j <= 2 * i - 1; j++) {
+//     str += count;
+//     count++;
+//   }
+//   str += "\n";
+// }
+// console.log(str);
+
+// let n = 3;
+// let output = 1;
+// for (let i = 1; i <= n; i++) {
+//   let run = "";
+//   for (let j = 1; j <= n - i; j++) {
+//     run += " ";
+//   }
+//   for (let k = 1; k <= 2 * i - 1; k++) {
+//     run += output++;
+//   }
+//   console.log(run);
+// }
+
+// const array1 = [new Date("21 Dec 1997 19:12:00 UTC")];
+// const localeString = array1.toLocaleString("en", { timeZone: "UTC" });
+
+// console.log(localeString);
+
+// if (hrs < 10) hours = "0" + hours;
+// if (mnts < 10) minutes = "0" + minutes;
+// lettimes = hours + ":" + minutes + ":00";
+
+// const timeString = "18:00:00";
+// // Prepend any date. Use your birthday.
+// const timeString12hr = new Date(
+//   "1970-01-01T" + timeString + "Z"
+// ).toLocaleTimeString("en-US", {
+//   timeZone: "UTC",
+//   hour12: true,
+//   hour: "numeric",
+//   minute: "numeric",
+// });
+// document.getElementById("myTime").innerText = timeString12hr;
+
+// function timeConversion(s) {
+//   let hour = parseInt(s.substring(0, 2));
+//   const minute = s.substring(3, 5);
+//   const second = s.substring(6, 8);
+//   const meridian = s.substring(8, 10);
+
+//   if (meridian === "PM" && hour !== 12) {
+//     hour += 12;
+//   } else if (meridian === "AM" && hour === 12) {
+//     hour = 0;
+//   }
+
+//   return hour.toString().padStart(2, "0") + ":" + minute + ":" + second;
+// }
+
+// const s = "07:05:45PM";
+// console.log(timeConversion(s)); // Output: '19:05:45'
+
+// let a = [48, 1, 4, 7];
+
+// //output
+// //[1, 48, 4, 7]
+
+// for (let i = 0; i < a.length; i++) {
+//   if (a[0] < a[i]) {
+//     a[0] = a[i];
+//   }
+// }
+
+// let n = 15;
+
+// for (let i = 1; i <= n; i++) {
+//   if (i % 3 == 0 && i % 5 == 0) {
+//     console.log("Superstar Rajnikanth");
+//   } else if (i % 3 == 0) {
+//     console.log("Superstar");
+//   } else if (i % 5 == 0) {
+//     console.log("Rajnikanth");
+//   } else {
+//     console.log(i);
+//   }
+// }
+// let a = [48, 1, 4, 7];
+// let min = Math.min(...a);
+// let minIndex = a.indexOf(min);
+
+// if (minIndex !== 0) {
+//   a.splice(minIndex, 1); // Remove the minimum element
+//   a.unshift(min); // Add the minimum element to the front
+// }
+
+// console.log(a); // Output: [1, 48, 4, 7]
+
+// let a = [8, 4, 3, 1, 7];
+// let min1 = Infinity;
+// let min2 = Infinity;
+
+// for (let i = 0; i < a.length; i++) {
+//   if (a[i] < min1) {
+//     min2 = min1;
+//     min1 = a[i];
+//   } else if (a[i] < min2) {
+//     min2 = a[i];
+//   }
+// }
+
+// a.splice(a.indexOf(min1), 1); // Remove the first minimum element
+// a.splice(a.indexOf(min2), 1); // Remove the second minimum element
+// a.unshift(min1, min2); // Add the minimum elements to the front
+
+// console.log(a); // Output: [1, 3, 4, 8, 7]
+
+// let arr = [5, 10, 1, 2, 8];
+// arr.sort(function (a, b) {
+//   return a - b;
+// });
+
+// console.log(arr); // Output: [1, 2, 5, 8, 10]
+
+// let n = 4;
+// for (let i = 1; i <= n; i++) {
+//   let str = "";
+//   for (let j = 1; j <= n - i; j++) {
+//     str += " ";
+//   }
+//   for (let k = 1; k <= i; k++) {
+//     str += k;
+//   }
+//   for (let l = i - 1; l >= 1; l--) {
+//     str += l;
+//   }
+//   console.log(str);
+// }
+// for (let i = 1; i <= n - 1; i++) {
+//   let str = "";
+//   for (let j = 1; j <= i; j++) {
+//     str += " ";
+//   }
+//   for (let k = 1; k <= n - i; k++) {
+//     str += k;
+//   }
+//   for (let l = n - 1 - i; l >= 1; l--) {
+//     str += l;
+//   }
+//   console.log(str);
+// }
+
+// let day = "monday";
+// switch (day) {
+//   case "monday":
+//     console.log("monday");
+//     break;
+//   case "tueday":
+//     console.log("tueday");
+//     break;
+//   case "wednesday":
+//     console.log("wednesday");
+//     break;
+//   default:
+//     console.log("not a day");
+//     break;
+// }
+
+// In this code, the variable i is initialized to 1, and the code block inside the do-while loop is executed once. The console.log() function is used to print the value of i to the console. The i variable is then incremented by 1 using the i++ statement.
+
+// The condition i <= 5 is then checked. If the condition is true (i.e., if i is less than or equal to 5), the code block is executed again. This process continues until the condition is false (i.e., i is greater than 5). Therefore, the output of this code would be:
+
+// let i = 1;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 10);
+
+// let i = 0;
+// while (i < 10) {
+//   console.log(i);
+//   i++;
+// }
+
+// let s = "07:05:45AM";
+// let hour = parseInt(s.substring(0, 2));
+// const minute = s.substring(3, 5);
+// const second = s.substring(6, 8);
+// const meridian = s.substring(8, 10);
+
+// if (meridian === "PM" && hour !== 12) {
+//   hour += 12;
+// } else if (meridian === "AM" && hour === 12) {
+//   hour = 0;
+// }
+
+// console.log(hour.toString().padStart(2, "0") + ":" + minute + ":" + second);
+
+// let a = [3, 4, 1, 2, 7];
+
+// // Implement swap algorithm to sort the array in ascending order
+// for (let i = 0; i < a.length; i++) {
+//   for (let j = i + 1; j < a.length; j++) {
+//     if (a[j] < a[i]) {
+//       let temp = a[i];
+//       a[i] = a[j];
+//       a[j] = temp;
+//     }
+//   }
+// }
+
+// console.log(a); // Output: [1, 3, 4, 8]
+
+// let i = 1;
+// while (i < 10) {
+//   console.log(i);
+//   i++;
+// }
+//
+// let run = " ";
+// let n = 9;
+// for (let i = n; i >= 1; i--) {
+//   run += " " + i;
+// }
+// console.log(run);
+
+// let s = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// for (let i = 0; i < s.length; i++) {
+//   for (let j = 0; j < s[i].length; j++) {
+//     console.log(s[i][j]);
+//   }
+// }
+
+// let str = "bleedy";
+// // let str_1 = str.split("");
+// // console.log(str_1);
+
+// let palindrome = str.split("").reverse().join("");
+// //console.log(palindrome);
+
+// if (str == palindrome) {
+//   console.log("correct");
+// } else {
+//   console.log("incorrect");
+// }
+
+// let str = "malayalam";
+// let str1 = str.split("y");
+// console.log(str1);
+// let rev = str1[0];
+// console.log(rev);
+// let st = rev;
+// let ori = str1[0].split("");
+// console.log(ori);
+
+// let a = [1, 2, 3, 2, 2, 4];
+// let count = {};
+// for (let i = 0; i < a.length; i++) {
+//   if (count[a[i]]) {
+//     count[a[i]]++;
+//   } else {
+//     count[a[i]] = 1;
+//   }
+// }
+// console.log(count);
+
+// let a = [1, 2, 3, 2, 2, 4];
+// let count = [];
+// for (let i = 0; i < a.length; i++) {
+//   if (!count[a[i]]) {
+//     count[a[i]] = 0;
+//   }
+//   count[a[i]]++;
+// }
+// let result = "";
+// for (let i = 0; i < count.length; i++) {
+//   if (count[i]) {
+//     result += i + " comes " + count[i] + " times, ";
+//   }
+// }
+
+// console.log(result);
+
+// const myString = "Hello, world!";
+// const char = myString.charAt(1);
+// console.log(char); // Output: "e"
+
+// Math.floor(4.5); // returns 4
+// Math.floor(7.9); // returns 7
+// Math.floor(-2.5); // returns -3
+
+// let to = Math.floor(Math.random() * 10);
+// console.log(to);
+
+// const request = new Request("/array.js", {
+//   method: "POST",
+//   body: "Hello world",
+// });
+
+// request.body; // ReadableStream
+
+// const myRequest = new Request(
+//   "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+// );
+// const myMethod = myRequest.method;
+// console.log(myMethod);
+// let c = [0, 0, 1, 0, 0, 1, 0];
+// let r = 0;
+// for (let i = 0; i < c.length; i++) {
+//   r++;
+//   if (i + 2 < c.length && c[i + 2] == 0) {
+//     i += 1;
+//   }
+//   console.log(r - 1);
+// }
+// let arr = [2, 3, 4, 1, 5];
+// let counter = 0;
+
+// for (let i = 0; i < arr.length - 1; i++) {
+//   let min = i;
+
+//   for (let j = i; j < arr.length; j++) {
+//     if (arr[min] > arr[j]) {
+//       min = j;
+//     }
+//   }
+
+//   // swap
+//   if (i !== min) {
+//     let tmp = arr[i];
+//     arr[i] = arr[min];
+//     arr[min] = tmp;
+//     counter++;
+//   }
+//   console.log(counter);
+// }
+
+// let day = "monday";
+// switch (day) {
+//   case "monday":
+//     console.log("monday");
+//     break;
+//   case "tueday":
+//     console.log("tueday");
+//     break;
+//   case "wednesday":
+//     console.log("wednesday");
+//     break;
+//   default:
+//     console.log("not a day");
+//     break;
+// }
+
+// let str = "My world is none.";
+// // let find = str.search("none");
+// // console.log(find);
+// let result = str.replace("none", "uthman");
+// console.log(result);
